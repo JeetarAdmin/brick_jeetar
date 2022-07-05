@@ -64,10 +64,10 @@ class {{name.pascalCase()}}CacheImage extends StatelessWidget {
   }
 }
 
-class ${{name.pascalCase()}}Lottie extends StatelessWidget {
+class {{name.pascalCase()}}Lottie extends StatelessWidget {
   final String url;
   final double? height, width;
-  const ${{name.pascalCase()}}Lottie({Key? key, required this.url, this.height, this.width})
+  const {{name.pascalCase()}}Lottie({Key? key, required this.url, this.height, this.width})
       : super(key: key);
 
   @override
