@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../utils/colors.dart';
 
-class ${{name}}Checkbox extends StatefulWidget {
+class {{name}}Checkbox extends StatefulWidget {
   final bool value;
   final ValueChanged<bool> onChanged;
   final Color checkedIconColor;
@@ -24,7 +24,7 @@ class ${{name}}Checkbox extends StatefulWidget {
   final String? text;
   final double? fontSize;
 
-  const ${{name}}Checkbox({
+  const {{name}}Checkbox({
     Key? key,
     required this.value,
     required this.onChanged,
@@ -48,10 +48,10 @@ class ${{name}}Checkbox extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _${{name}}CheckboxState createState() => _${{name}}CheckboxState();
+  _{{name}}CheckboxState createState() => _{{name}}CheckboxState();
 }
 
-class _${{name}}CheckboxState extends State<${{name}}Checkbox> {
+class _{{name}}CheckboxState extends State<{{name}}Checkbox> {
   late bool _checked;
   late CheckStatus _status;
   late Color _filledColor;
