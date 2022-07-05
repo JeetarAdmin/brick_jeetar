@@ -1,3 +1,12 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:get_it/get_it.dart';
+import '../shared/di.dart';
+import '../shared/notifications/firebase_notification_manager.dart';
+import '../shared/utils/storage.dart';
+import 'app_configs.dart';
+
 // This is our global ServiceLocator
 GetIt getIt = GetIt.instance;
 
