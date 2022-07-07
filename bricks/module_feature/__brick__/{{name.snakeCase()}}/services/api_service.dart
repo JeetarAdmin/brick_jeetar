@@ -1,4 +1,4 @@
-import '../../../../global_shared_folder/__brick__/libs/shared/network/network_request.dart';
+import 'package:{{package_name}}/shared/network/network_request.dart';
 
 class {{name.pascalCase()}}ApiService{
   final HttpService http;

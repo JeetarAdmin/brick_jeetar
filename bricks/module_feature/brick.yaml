@@ -24,5 +24,8 @@ vars:
   name:
     type: string
     description: Your name
-    default: Dash
     prompt: What is your name?
+  package_name:
+    type: string
+    description: Your package name e.g (klooft_supplier)
+    prompt: What is the project package name?
