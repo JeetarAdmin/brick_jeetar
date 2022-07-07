@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../../../../libs/shared/utils/custom_style.dart';
+import '../../utils/custom_style.dart';
 
 // ignore: must_be_immutable
 class InputText extends StatefulWidget {

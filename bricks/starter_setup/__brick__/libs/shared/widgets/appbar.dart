@@ -6,7 +6,7 @@ import 'package:get_it/get_it.dart';
 import '../../../../../../libs/shared/navigation/navigation_service.dart';
 import '../../../../../../libs/shared/utils/asset_images.dart';
 
-class {{name}}AppBar extends StatelessWidget implements PreferredSizeWidget {
+class {{name.pascalCase()}}AppBar extends StatelessWidget implements PreferredSizeWidget {
   final Widget? leadingIcon;
   final String? titleText;
   final Widget? titleWidget;
@@ -18,7 +18,7 @@ class {{name}}AppBar extends StatelessWidget implements PreferredSizeWidget {
   final double? appHeight;
   final double? leadingWidth;
 
-  const {{name}}AppBar({
+  const {{name.pascalCase()}}AppBar({
     Key? key,
     this.leadingIcon,
     this.titleText,
