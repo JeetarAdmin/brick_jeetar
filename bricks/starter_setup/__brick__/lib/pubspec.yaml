@@ -1,4 +1,4 @@
-name: zepta_supplier
+name: {{name.pascalCase()}}
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -70,8 +70,8 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
-  assets:
-    # - assets/json/
+  # assets:
+  #   - assets/images/
     # - assets/images/bottom_navbar/active/
     # - assets/images/bottom_navbar/inactive/
     # - assets/images/home/
