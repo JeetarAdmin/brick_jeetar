@@ -22,5 +22,21 @@ Bricks can be installed from this repository.
 Install a brick
 
 ```sh
-mason add starter_setup --git-url https://github.com/DAMMAK/brick_jeetar --git-path starter_setup
+## Install Starter Setup brick
+mason add -g starter_setup --git-url https://github.com/DAMMAK/brick_jeetar --git-path bricks/starter_setup
+
+## To use Starter Setup brick
+mason make starter_setup
+
+NB: Follow the prompt
+```
+
+```sh
+## Install Module feature brick
+mason add -g starter_setup --git-url https://github.com/DAMMAK/brick_jeetar --git-path bricks/module_feature
+
+## To use Starter Setup brick
+mason make module_feature
+
+NB: Follow the prompt
 ```
