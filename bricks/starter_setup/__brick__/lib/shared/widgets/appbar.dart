@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get_it/get_it.dart';
-
-import '../../../../../../libs/shared/navigation/navigation_service.dart';
-import '../../../../../../libs/shared/utils/asset_images.dart';
+import '../navigation/navigation_service.dart';
+import '../utils/asset_images.dart';
 
 class {{name.pascalCase()}}AppBar extends StatelessWidget implements PreferredSizeWidget {
   final Widget? leadingIcon;
@@ -48,7 +47,7 @@ class {{name.pascalCase()}}AppBar extends StatelessWidget implements PreferredSi
               GetIt.I.get<NavigationService>().back();
             },
             child: SvgPicture.asset(
-              AssetResources.KEYBOARD_BACK_ICON,
+              AssetResources.ARROW_LEFT,
               height: 24.h,
               width: 24.w,
               fit: BoxFit.scaleDown,

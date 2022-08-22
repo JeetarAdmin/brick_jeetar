@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../../../../libs/shared/utils/asset_images.dart';
+import '../utils/asset_images.dart';
 
 class NotificationMessage {
   static showError(BuildContext context, {required String message}) {
@@ -62,7 +62,6 @@ class _Messenger extends StatelessWidget {
                   message,
                   maxLines: 3,
                   style: TextStyle(
-                      fontFamily: "Gilmer",
                       fontWeight: FontWeight.w800,
                       fontSize: 14.sp,
                       color: Color(isErrorMessage ? 0xffEA4336 : 0xFF2FC55B)),
