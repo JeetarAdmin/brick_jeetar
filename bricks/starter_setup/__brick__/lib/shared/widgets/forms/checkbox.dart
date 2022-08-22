@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import '../../utils/colors.dart';
 
 class {{name.pascalCase()}}Checkbox extends StatefulWidget {
@@ -58,13 +57,13 @@ class _{{name.pascalCase()}}CheckboxState extends State<{{name.pascalCase()}}Che
 
   @override
   void initState() {
-    _filledColor = widget.checkedFillColor ?? AppColors.zeptaPurple;
+    _filledColor = widget.checkedFillColor ?? AppColors.checkboxBgColor;
     super.initState();
     _init();
   }
 
   @override
-  void didUpdateWidget(${{name}}Checkbox oldWidget) {
+  void didUpdateWidget({{name.pascalCase()}}Checkbox oldWidget) {
     super.didUpdateWidget(oldWidget);
     _init();
   }

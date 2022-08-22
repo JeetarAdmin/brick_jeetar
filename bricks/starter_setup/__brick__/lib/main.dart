@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
         ],
         supportedLocales: S.delegate.supportedLocales,
         debugShowCheckedModeBanner: false,
-        title: 'Zepta Supplier',
+        title: {{name.pascalCase()}},
         themeMode: ThemeMode.light,
         // theme: lightTheme,
         navigatorObservers: [

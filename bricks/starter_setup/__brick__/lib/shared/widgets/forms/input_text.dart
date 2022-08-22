@@ -127,28 +127,24 @@ class _InputTextState extends State<InputText> {
   }
 
   labelTextFieldTextStyle(context) => TextStyle(
-      fontFamily: 'Gilmer',
       fontSize: 14.sp,
       color: Theme.of(context).primaryColor,
       fontWeight: FontWeight.w600,
       height: 1.4);
 
   textFieldPlaceholderTextStyle(context) => TextStyle(
-      fontFamily: 'Gilmer',
       fontSize: 14.sp,
       color: Theme.of(context).hintColor,
       fontWeight: FontWeight.w600,
       height: 1.4);
 
   errorTextStyle(context) => TextStyle(
-      fontFamily: 'Gilmer',
       fontSize: 10.sp,
       color: Theme.of(context).errorColor,
       fontWeight: FontWeight.w500,
       height: 1.4);
 
   textFieldTextStyle(context) => TextStyle(
-      fontFamily: 'Gilmer',
       fontSize: 14.sp,
       color: Theme.of(context).textTheme.bodyText1!.color,
       fontWeight: FontWeight.w500,

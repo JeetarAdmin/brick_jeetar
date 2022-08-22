@@ -66,7 +66,7 @@ class _InputDropDownState extends State<InputDropDown> {
               padding: EdgeInsets.only(
                   left: widget.prefixIcon == null ? 24.w : 0, right: 24.w),
               decoration: BoxDecoration(
-                color: AppColors.zeptaGrayscale[60]!,
+                color: AppColors.inputDropDownColor,
                 borderRadius: BorderRadius.circular(16.r),
                 border: Border.all(
                   width: 1,
@@ -93,24 +93,21 @@ class _InputDropDownState extends State<InputDropDown> {
                   prefixIcon: widget.prefixIcon,
                   suffixIcon: const Icon(Icons.keyboard_arrow_down),
                   hintStyle: TextStyle(
-                    fontFamily: FontFamily.plusJakartaSans,
-                    color: AppColors.zeptaGrayscale[20],
+                    color: AppColors.inputDropDownLabelColor.withOpacity(0.8),
                     fontWeight: FontWeight.w400,
                     fontStyle: FontStyle.normal,
                     fontSize: 14.sp,
                     height: 1.26,
                   ),
                   labelStyle: TextStyle(
-                    fontFamily: FontFamily.plusJakartaSans,
-                    color: AppColors.zeptaGrayscale[20],
+                    color: AppColors.inputDropDownLabelColor,
                     fontWeight: FontWeight.w400,
                     fontStyle: FontStyle.normal,
                     fontSize: 14.sp,
                     height: 1.26,
                   ),
                   floatingLabelStyle: TextStyle(
-                    fontFamily: FontFamily.plusJakartaSans,
-                    color: AppColors.zeptaGrayscale[20],
+                    color: AppColors.inputDropDownLabelColor,
                     fontWeight: FontWeight.w400,
                     fontStyle: FontStyle.normal,
                     fontSize: 12.sp,
@@ -148,7 +145,7 @@ class _InputDropDownState extends State<InputDropDown> {
 
   getBorderColor(isFocus) {
     borderColor = isError
-        ? AppColors.errorRed
+        ? AppColors.errorColor
         : isFocus
             ? Colors.black
             : Colors.transparent;
@@ -164,8 +161,7 @@ class _InputDropDownState extends State<InputDropDown> {
   }
 
   labelTextFieldTextStyle(context) => TextStyle(
-        fontFamily: FontFamily.plusJakartaSans,
-        color: AppColors.zeptaGrayscale[20],
+        color: AppColors.inputDropDownLabelColor,
         fontWeight: FontWeight.w400,
         fontStyle: FontStyle.normal,
         fontSize: 12.sp,
@@ -175,13 +171,13 @@ class _InputDropDownState extends State<InputDropDown> {
   // TextStyle(
   textFieldTextStyle(context) => TextStyle(
       fontSize: 14.sp,
-      color: AppColors.zeptaPurple,
+      color: AppColors.inputDropDownLabelColor,
       fontWeight: FontWeight.w600,
       height: 1.4);
 
   textFieldPlaceholderTextStyle(context) => TextStyle(
       fontSize: 14.sp,
-      color: AppColors.zeptaPurple,
+      color: AppColors.inputDropDownColor,
       fontWeight: FontWeight.w400,
       height: 1.4);
 
