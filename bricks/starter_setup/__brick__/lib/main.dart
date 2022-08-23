@@ -9,6 +9,7 @@ import 'generated/l10n.dart';
 import 'shared/analytics/analytics_service.dart';
 import 'shared/navigation/navigation_service.dart';
 import 'shared/navigation/routes.dart';
+import 'root/route/route.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
         ],
         supportedLocales: S.delegate.supportedLocales,
         debugShowCheckedModeBanner: false,
-        title: {{name.pascalCase()}},
+        title: '{{name.pascalCase()}}',
         themeMode: ThemeMode.light,
         // theme: lightTheme,
         navigatorObservers: [
@@ -44,7 +45,7 @@ class MyApp extends StatelessWidget {
           ),
         ],
         navigatorKey: GetIt.I<NavigationService>().navigatorKey,
-        // initialRoute: RootRoutes.initial,
+        initialRoute: RootRoutes.initial,
         // onGenerateRoute: routes,
       ),
     );
