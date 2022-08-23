@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:mason/mason.dart';
 import 'package:process_run/shell.dart';
 
