@@ -8,6 +8,6 @@ void run(HookContext context) async {
 
 Future<void> installI10n(HookContext context) async {
   var shell = Shell();
-  await shell.run('flutter Intl:Initialize');
+  await shell.run('flutter pub run intl_utils:generate');
   context.logger.info('Successfully setup I10n');
 }
