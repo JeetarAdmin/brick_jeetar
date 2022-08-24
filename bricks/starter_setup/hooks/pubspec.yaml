@@ -6,4 +6,3 @@ environment:
 dependencies:
   mason: ^0.1.0-dev.31
   process_run: ^0.12.3+2
-  intl_utils: ^2.7.0
