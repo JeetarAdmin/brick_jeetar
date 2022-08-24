@@ -103,9 +103,9 @@ class _{{name.pascalCase()}}CheckboxState extends State<{{name.pascalCase()}}Che
             BorderRadius.all(Radius.circular(widget.borderRadius ?? 6)),
         border: Border.all(
           color: widget.shouldShowBorder
-              ? (widget.borderColor ?? AppColors.zeptaGrayscale[40]!)
+              ? (widget.borderColor ?? AppColors.inputDropDownborderColor)
               : (!widget.value
-                  ? (widget.borderColor ?? AppColors.zeptaGrayscale[50]!)
+                  ? (widget.borderColor ?? AppColors.inputDropDownborderColor)
                   : Colors.transparent),
           width: widget.shouldShowBorder ? widget.borderWidth ?? 2.0 : 2.0,
         ),
@@ -138,7 +138,7 @@ class _{{name.pascalCase()}}CheckboxState extends State<{{name.pascalCase()}}Che
             widget.text ?? "",
             style: TextStyle(
               fontSize: widget.fontSize ?? 14.sp,
-              color: AppColors.zeptaGrayscale[50],
+              color: AppColors.inputDropDownborderColor,
             ),
           )
         ],

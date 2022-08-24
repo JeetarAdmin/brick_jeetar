@@ -6,7 +6,7 @@ class AppColors {
   static Color inputErrorBorder = Color.fromARGB(0, 204, 24, 12);
   static Color inputDropDownColor = Colors.black.withOpacity(0.1);
   static Color inputDropDownLabelColor = Colors.black;
+  static Color inputDropDownborderColor = Colors.black;
   static Color errorColor = Colors.red;
   static Color checkboxBgColor = Colors.purple.shade200;
-
 }
