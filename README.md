@@ -37,7 +37,7 @@ NB: Follow the prompt
 mason add -g module_feature --git-url https://github.com/DAMMAK/brick_jeetar --git-path bricks/module_feature
 ```
 
-## To use Starter Setup brick
+## To use Module feature brick
 ```sh
 mason make module_feature
 ```
