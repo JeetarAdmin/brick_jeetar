@@ -3,7 +3,9 @@ class AppConfig {
   static const int resendOtpTime = 120;
 }
 
-class AppURL {}
+class AppURL {
+  static const String baseUrl = "";
+}
 
 class AppConstants {
   static const String deviceTokenAdded = "deviceTokenAdded";
